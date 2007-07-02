@@ -1,0 +1,58 @@
+# This is a sample data file for "payback", a program that determines
+#  who owes who how much money.
+
+# Six people went to Vegas.  WOOOOOOOOO!
+# Now they're all back home, and all sober.
+#
+# Jon, Steve, Brett, Nan, Leila, and Michaela will now attempt to figure out
+# who owes who for what.
+
+# The more adventurous line items may or may not have been filtered out, to
+# protect the innocent and the guilty. :)
+
+
+# Limo from the airport!  Michaela got the tip.
+
+Item: Limo from LAS to Hilton, 11.10F ("Airport limo")
+Owe: Jon, Steve, Brett, Nan, Leila, Michaela   Paid: Leila(40.00) Michaela(5.00)
+
+# Dinner was a buffet, so everyone owes equal shares -- except Brett, who
+# ordered a la carte.  Random people threw in cash until it looked good enough.
+
+Item: Buffet dinner, 11.10F ("Buffet")
+Owe: Jon, Steve, Brett(25.00), Nan, Leila, Michaela   Paid: Brett(67.00) Steve(12.00) Michaela(17.00)
+
+# Lunch the next day was at Quark's, for the Star Trek fans among us.  Leila
+# got a souvenir.
+
+Item: Lunch at Quark's, 11.11A ("Quark's")
+Owe: Jon, Steve, Brett, Nan, Leila(45.00), Michaela   Paid: Nan(143.82) Jon(40.00)
+
+# A couple of taxis, which only held four of us.
+
+Item: Taxis to the Strip and back, 11.11A ("11-11A Taxis")
+Owe: Brett, Nan, Jon, Steve                    Paid: Brett(16.00)
+
+# When we went to the Little Chapel to see our friend get married, we needed
+# two separate taxis.
+
+Item: Taxi from hotel to Little Chapel, 11.12S ("Taxi to Chapel")
+Owe: Brett, Nan, Jon                           Paid: Brett(7.00)
+Owe: Leila, Michaela, Steve                    Paid: Michaela(7.00)
+
+# Then to Bellagio, same two taxi groups
+
+Item: Taxi from Little Chapel to Bellagio, 11.12S ("Taxi to Bellagio")
+Owe: Brett, Nan, Jon                           Paid: Brett(10.00)
+Owe: Leila, Michaela, Steve                    Paid: Michaela(16.00)
+
+# Back to the airport
+
+Item: Taxi from Bellagio to airport, 11.12S ("Taxi to airport")
+Owe: Brett, Nan, Jon                           Paid: Jon(11.00)
+Owe: Leila, Michaela, Steve                    Paid: Leila(11.00)
+
+# And home from SJC on the other side.
+
+Item: Shuttle back from SJC, 11.12S ("Shuttle from SJC")
+Owe: Brett, Nan, Jon, Steve, Leila, Michaela   Paid: Jon(50.00)
