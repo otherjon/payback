@@ -22,27 +22,24 @@ which is then distributed to Alice and Bob.
 
 INPUT FILE SYNTAX
  * An optional line-item detailed name, with an optional short name.  (Note
-   that the second example doesn't have a separate short name.)
-
-    Item: Long detailed line-item name ("Short Name")
-    Item: Quick Item
+   that the second example doesn't have a separate short name.)<br>
+    `Item: Long detailed line-item name ("Short Name")`<br>
+    `Item: Quick Item`
 
  * The list of people who owe money for the line item, with optional
    hard-coded amounts that they owe, e.g. if they don't owe an equal
    share.  (All people who don't owe a hard-coded amount will split the
-   remaining balance equally.)
-
-    Owe: Alice, Bob(100.00), Carol(50.00), Dave
-
+   remaining balance equally.)<br>
+    `Owe: Alice, Bob(100.00), Carol(50.00), Dave`<br>
    (In the above example, Bob owes $100, Carol owes $50, and Alice and
     Dave split the remainder equally.)
 
- * The list of people who paid for the line item, and how much
-
-    Paid: Alice(100.00), Bob(200.00)
-
+ * The list of people who paid for the line item, and how much<br>
+    `Paid: Alice(100.00), Bob(200.00)`<br>
    (must be on the same line as the "Owe:" segment)
 
  * blank lines are ignored
  * lines starting with # are ignored
  * lines starting with "Comment:" are printed out but otherwise ignored
+
+ * See `sample.data` for an example.
